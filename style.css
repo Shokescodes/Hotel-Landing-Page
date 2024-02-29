@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Jost", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+}
+
+.logo img {
+  max-width: 120px;
+  height: auto;
+}
+.navmenu {
+  display: flex;
+}
+.navmenu a {
+  color: rgb(19, 151, 228);
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 5px 14px;
+  font-weight: 400;
+  transition: all 0.42s ease;
+}
+
+.navmenu li {
+  margin-left: 65px;
+}
+.navmenu a:hover {
+  color: cadetblue;
+}
+
+.phone-icon {
+  font-size: 20px;
+  color: rgb(19, 151, 228);
+  z-index: 10001;
+}
+
+.phone-icon p {
+  margin-right: 15px;
+}
+
+.phone-icon i:hover {
+  transform: scale(1.1);
+  color: rgb(19, 151, 228);
+}
+
+.main-home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/building.png);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  text-align: center;
+}
+
+.main-text h2 {
+  color: rgb(19, 151, 228);
+  font-size: 56px;
+  text-align: center;
+}
+
+.main-text p {
+  color: rgb(19, 151, 228);
+  font-size: medium;
+  text-transform: capitalize;
+  line-height: 1.1;
+  font-weight: 300;
+  text-align: center;
+}
+
+.main-btn {
+  display: inline-block;
+  color: rgb(19, 151, 228);
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border: 2px solid lightslategray;
+  margin-top: 10px;
+  padding: 12px 25px;
+  transition: all 0.42s ease;
+}
+.main-btn:hover {
+  background: lightseagreen;
+  color: azure;
+}
